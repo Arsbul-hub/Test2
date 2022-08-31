@@ -4,77 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Preview">
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/android_2"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:clipToOutline="true"
-        android:background="@drawable/android_2"
-        tools:ignore="MissingConstraints" >
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/frame_70"
-            android:layout_width="247dp"
-            android:layout_height="160dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="56dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="216dp"
-            android:background="@drawable/frame_70"
-            tools:ignore="MissingConstraints">
-            <View
-                android:id="@+id/group_57"
-                android:layout_width="247dp"
-                android:layout_height="160dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:background="#00000000"
-                tools:ignore="MissingConstraints" >
-                <View
-                    android:id="@+id/worldcinema"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:background="@drawable/worldcinema"
-                    tools:ignore="MissingConstraints" />
-                <View
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/frame_69"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:background="@drawable/frame_69"
-                    tools:ignore="MissingConstraints" >
-                    <View
-                        android:id="@+id/group_56"
-                        android:layout_width="213.59dp"
-                        android:layout_height="113.43dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentTop="true"
-                        android:background="#00000000">
-                        <View
-                            android:id="@+id/vector_5"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentBottom="true"
-                            android:background="@drawable/vector_5"
-                            />
+    android:background="#332973">
 
-                    </View>
-                </View>
-            </View>
-        </RelativeLayout>
-    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="131dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.388"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            app:srcCompat="@drawable/worldcinema" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
